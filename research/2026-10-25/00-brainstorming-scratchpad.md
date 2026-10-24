@@ -1,5 +1,21 @@
 # Research scratchpad: Neural Structured Learning × Lance-graph × ndarray
 
+## Deep-dive index (25 October)
+
+The eight proposals now have companion, falsifiable specifications. Start with the [steel-thread demonstrator](00a-steel-thread-demonstrator.md): a three-node NSL graph, one tiny typed neural graph, one shared neighbor and an evidence/replay sidecar. This is an experiment design, **not** an implementation.
+
+| Proposal | Added contract |
+| --- | --- |
+| [#1 graph focus](https://github.com/AdaWorldAPI/neural-structured-learning/pull/1) | Exact NSL graph dedup/tie rules, directed edges, 12 compatibility fixtures, lease refusals |
+| [#2 perturbations](https://github.com/AdaWorldAPI/neural-structured-learning/pull/2) | Gradient vs spherical geometry vs do-interventions, 9 falsifiers |
+| [#3 evidence](https://github.com/AdaWorldAPI/neural-structured-learning/pull/3) | Referential, event-temporal and epistemic identity, optional inference sidecar |
+| [#4 model DTO](https://github.com/AdaWorldAPI/neural-structured-learning/pull/4) | Typed node/port/shape/quantization contract, ONNX/TFLite refusal matrix |
+| [#5 pair LUT](https://github.com/AdaWorldAPI/neural-structured-learning/pull/5) | Distinct cosine/angle/rotation tables, offline code certification, MCU memory accounting |
+| [#6 DR³](https://github.com/AdaWorldAPI/neural-structured-learning/pull/6) | Flat and Morton address maps, sparse adversarial workloads, independent CSR baseline |
+| [#7 benchmark](https://github.com/AdaWorldAPI/neural-structured-learning/pull/7) | Versioned oracle manifest, nine tasks, eight mutation/negative controls |
+
+**Execution spine:** #7 → #1 → #4 → #3, with #2/#5/#6 independent until needed. Do not declare a neural, causal or proof law on the strength of shared addressing alone.
+
 **Date:** 2026-10-25  
 **Status:** BRAINSTORMING / PROPOSED; not an implementation or a benchmark result.  
 **Working theory:** structured training signals (graph and adversarial perturbations) can potentially be retained as addressable, verifiable computational relations through inference, rather than discarded once a neural network is trained. An ONNX/TFLite interchange should be decoded at the adapter boundary, not force a persistent tensor object model into Lance-graph. The outcome must be measured, not presumed.
